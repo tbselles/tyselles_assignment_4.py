@@ -44,3 +44,22 @@ if subject in study_options:
         print("History was relaxing for you!")
 else:
     print("Invalid subject choice! No changes made.")
+# Step 4: Different endings using accumulated variables
+if type(current_gpa) is not float:
+    print("Error: GPA must be a float!")
+else:
+    if current_gpa >= 3.5:
+        if stress_level < 40:
+            print("Ending 1: Dean's List! Top grades, low stress, amazing semester!")
+        else:
+            print("Ending 2: Academic Star but Exhausted! High GPA but too much stress.")
+    else:
+        if social_points > 50:
+            print("Ending 3: Social Butterfly! Fun semester, average academics.")
+        else:
+            print("Ending 4: Needs Improvement! Time to refocus next term.")
+
+print(f"Adjusted GPA: {current_gpa}")
+print(f"Adjusted Social Points: {social_points}")
+print(f"Adjusted Stress Level: {stress_level}")
+print(f"Adjusted Study Hours: {study_hours}")
